@@ -1,0 +1,47 @@
+.instructions {
+  margin: 0 auto;
+  margin-top: 10rem;
+  max-width: 100;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: 1;
+  align-items: center;
+  justify-content: center;
+  border-top: 2px solid rgba(38, 38, 40, 0.09);
+  padding-top: 2rem;
+  height: 45rem;
+}
+.instructions__heading {
+  font-size: 3rem;
+  letter-spacing: 0.3rem;
+  margin-bottom: 2rem;
+}
+.instructions__wrapper {
+  display: flex;
+  max-width: 120rem;
+  justify-content: center;
+}
+.instructions__wrapper--steps {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  height: 25rem;
+  padding-left: 1rem;
+  padding-top: 1rem;
+  width: 30%;
+}
+.instructions__wrapper--steps-span {
+  max-width: 22rem;
+  font-size: 1.8rem;
+  color: rgb(24, 184, 13);
+  margin-bottom: 0.5rem;
+}
+.instructions__wrapper--steps-heading {
+  font-size: 1.7rem;
+  letter-spacing: 0.08rem;
+  margin-bottom: 1rem;
+}
+.instructions__wrapper--steps-paragraph {
+  width: 90%;
+  font-size: 2rem;
+}/*# sourceMappingURL=Instructions.css.map */

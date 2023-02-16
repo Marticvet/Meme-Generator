@@ -1,0 +1,11 @@
+.footer {
+  background-color: rgb(251, 250, 250);
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  padding-left: 4rem;
+}
+.footer p {
+  font-size: 1.5rem;
+  font-weight: 400;
+}/*# sourceMappingURL=Footer.css.map */

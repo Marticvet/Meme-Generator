@@ -1,0 +1,216 @@
+.memeView {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+
+    &__wrapper {
+        display: flex;
+        width: 100%;
+        height: calc(100vh - 7rem);
+        
+        &--leftside {
+            width: calc(100% - 18vw);
+            height: inherit;
+            background-color: rgba(0, 0, 0, 0.925);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+
+            button {
+                width: 5rem;
+                height: 3rem;
+                background: none;
+                color: rgb(147, 146, 146);
+                border: none;
+                font-size: 2.5rem;
+                position: absolute;
+                top: 20px;
+                right: 15px;
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+
+            div {
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                img {
+                    width: 55rem;
+                    height: 55rem;
+                }
+
+                .upperText {
+                    color: white;
+                    position: absolute;
+                    top: 3rem;
+                    font-weight: 600;
+                    font-size: 3.3rem;
+
+                    &::placeholder {
+                        color: white;
+                    }
+                }
+
+                .bottomText {
+                    color: white;
+                    position: absolute;
+                    bottom: 3rem;
+                    font-size: 3.3rem;
+                }
+            }
+        }
+
+        &--rightside {
+            width: calc(100% - 82vw);
+            background-color: rgba(0, 0, 0, 0.873);
+            color: white;
+
+            .template {
+                height: 8rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 1.8rem;
+                background-color: rgba(39, 39, 39, 0.854);
+
+                svg {
+                    margin-right: 1rem;
+                }
+            }
+
+            .text {
+                width: 100%;
+                height: 62rem;
+                color: lightgrey;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                h6 {
+                    font-size: 2rem;
+                    margin-bottom: 1rem;
+                    font-weight: 300;
+                }
+
+                input {
+                    width: 27rem;
+                    border-radius: 5px;
+                    background-color: transparent;
+                    height: 3rem;
+                    border: none;
+                    outline: 1px solid rgb(168, 165, 165);
+                    color: white;
+                    padding-left: 1rem;
+
+                    &::placeholder {
+                        padding-left: 1rem;
+                    }
+
+                    &:focus {
+                        outline: 1px solid rgb(6, 99, 249);
+                        color: white;
+                        padding-left: 1rem;
+                    }
+                }
+
+                &__bottom {
+                    &--wrapper {
+                        margin: 2rem 0;
+                        background-color: transparent;
+                        display: flex;
+                        width: 27rem;
+
+                        &-fontSelector {
+                            width: 20rem;
+                            outline: 1px solid rgb(168, 165, 165);
+                            margin-right: 1.5rem;
+                            border-radius: 5px;
+                            background-color: rgba(39, 39, 39, 0.854);
+                            height: 3rem;
+                            border: none;
+                            color: rgb(120, 118, 118);
+                            padding-left: 1.5rem;
+
+                            option {
+                                background-color: rgb(69, 66, 66);
+                                color: white;
+                                font-size: 1.5rem;
+                                padding: .5rem 0;
+                            }
+                        }
+
+                        input {
+                            all: none;
+                            width: 3rem;
+                            padding: 0;
+                            border-radius: 5px;
+                            color: white;
+                            margin-right: 1.5rem;
+
+                            &:focus {
+                                all: none;
+                                width: 3rem;
+                                padding: 0;
+                                border-radius: 5px;
+                                color: white;
+                                margin-right: 1.5rem;
+                                outline: 1px solid rgb(168, 165, 165);;
+
+                            }
+                        }
+
+                        &-sizeSelector {
+                            width: 4.5rem;
+                            outline: 1px solid rgb(168, 165, 165);
+                            border-radius: 5px;
+                            background-color: rgba(39, 39, 39, 0.854);
+                            height: 3rem;
+                            border: none;   
+                            color: white;
+                        }
+                    }
+                }
+
+                &__top {
+                    margin: 2rem 0;
+                }
+            }
+        }
+    }
+
+    &__footer {
+        background-color: rgba(0, 0, 0, 0.841);
+        width: 100%;
+        height: 8rem;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        
+        button {
+            margin-right: 5rem;
+            border: none;
+            height: 3.5rem;
+            color: white;
+            width: 20rem;
+            background-color: #096bf5;
+            font-size: 2.3rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-weight: 600;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}
